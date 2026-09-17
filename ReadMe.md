@@ -14,5 +14,5 @@ Build a practical collection of reusable and well-documented detections for SOC 
 
 ---
 
-**Author:** Saeed Elfiky
-**Focus:** SOC | SIEM | Detection Engineering | Threat Hunting
+- **Author:** Saeed Elfiky
+- **Focus:** SOC | SIEM | Detection Engineering | Threat Hunting
