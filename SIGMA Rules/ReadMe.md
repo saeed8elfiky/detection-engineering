@@ -3,6 +3,10 @@
 Brief reference for detection rules maintained in this repo/index.
 
 ## Rules Table:
+[1. Dump LSASS.exe Memory using comsvcs.dll](#1-dump-lsassexe-memory-using-comsvcsdll)
+[2. PowerShell Encoded Command](#2-powershell-encoded-command)
+[3. FortiGate Malware Activity Detected](#3-FortiGate-malware-activity-detected)
+---
 
 ### 1. Dump LSASS.exe Memory using comsvcs.dll
  
@@ -16,8 +20,6 @@ Brief reference for detection rules maintained in this repo/index.
 **Known false positives:** Highly unlikely in a standard environment.
  
 ---
-
-[2. PowerShell Encoded Command](#2-powershell-encoded-command)
 
 ### 2. PowerShell Encoded Command
 
@@ -34,3 +36,16 @@ Brief reference for detection rules maintained in this repo/index.
 **Known false positives:** Legitimate admin scripts using encoded PowerShell; software deployment/RMM tools that launch PowerShell this way. *(No exception list configured yet — consider adding one for common deployment tools.)*
 
 ---
+
+### 3. FortiGate Malware Activity Detected
+
+- **Rule Query:** [FortiGate Malware Activity Detected](Network/Fortigate_Malware_Activity_Detected.yml)
+- **Status:** `Experimental`
+- **Log source:** `Fortinet, firewall`
+- **Severity:** `High`
+- **MITRE ATT&CK:** `Impact`
+- **Author** `Saeed Elfiky`
+
+- **What it does:** Flags UTM-detected virus/malware events from FortiGate firewall logs (`fortinet.firewall.subtype: virus`), indicating the firewall's antivirus profile caught infected files or virus traffic.
+
+**Known false positives:** Normal file transfers, legitimate downloads, software updates, cloud storage syncs, partner file exchanges, antivirus test files.
