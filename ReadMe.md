@@ -4,7 +4,7 @@ A collection of detection rules, Sigma rules, SIEM queries, and threat-hunting c
 
 ## Contents
 - **Sigma Rules:** [Sigma-Rules](SIGMA%20Rules/)
-- **SIEM Rules:** Platform-specific detection queries
+- **SIEM Rules:** [SIEM-Rules](SIEM/)
 
 ## Goal
 
