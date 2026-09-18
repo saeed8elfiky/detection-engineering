@@ -3,10 +3,8 @@
 A collection of detection rules, Sigma rules, SIEM queries, and threat-hunting content for cybersecurity monitoring and SOC operations.
 
 ## Contents
-- Sigma: Generic detection rules
-- SIEM: Platform-specific detection queries
-- Hunting: Threat-hunting queries and techniques
-- MITRE: MITRE ATT&CK mapping and coverage
+- **Sigma Rules:** [Sigma Detection Rules](SIGMA Rules/ReadMe.md)
+- **SIEM Rules:** Platform-specific detection queries
 
 ## Goal
 
