@@ -6,9 +6,9 @@ Brief reference for detection rules maintained in this repo/index.
 
 ## Rules Table:
 
-[PowerShell Encoded Command](#powershell-encoded-command)
+[PowerShell Encoded Command](#1. powershell-encoded-command)
 
-### PowerShell Encoded Command
+### 1. PowerShell Encoded Command
 
 - **Type:** `ES|QL` 
 - **Severity:** `High` 
