@@ -1,4 +1,4 @@
-# SIEM Detection Rules
+# Elastic Security Detection Rules
 
 Brief reference for detection rules maintained in this repo/index.
 
@@ -10,7 +10,7 @@ Brief reference for detection rules maintained in this repo/index.
 
 ### 1. PowerShell Encoded Command
 
-- **Rule Query:** [PowerShell Encoded Command](Elasticsearch/Execute_base64-encoded_PowerShell.ndjson)
+- **Rule Query:** [PowerShell Encoded Command](./Execute_base64-encoded_PowerShell.ndjson)
 - **Type:** `ES|QL` 
 - **Severity:** `High` 
 - **Risk Score:** `73` 
