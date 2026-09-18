@@ -3,7 +3,7 @@
 A collection of detection rules, Sigma rules, SIEM queries, and threat-hunting content for cybersecurity monitoring and SOC operations.
 
 ## Contents
-- **Sigma Rules:** [Sigma-Rules](SIGMA-Rules/ReadMe.md)
+- **Sigma Rules:** [Sigma-Rules](SIGMA Rules/ReadMe.md)
 - **SIEM Rules:** Platform-specific detection queries
 
 ## Goal
