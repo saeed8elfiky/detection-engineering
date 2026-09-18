@@ -4,7 +4,9 @@ Brief reference for detection rules maintained in this repo/index.
 
 ## Rules Table:
 
-[1. PowerShell Encoded Command](#1-powershell-encoded-command)
+1. [PowerShell Encoded Command](#1-powershell-encoded-command)
+
+---
 
 ### 1. PowerShell Encoded Command
 

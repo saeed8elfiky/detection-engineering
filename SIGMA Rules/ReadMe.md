@@ -4,9 +4,9 @@ Brief reference for detection rules maintained in this repo/index.
 
 ## Rules Table:
 
-- [1. Dump LSASS.exe Memory using comsvcs.dll](#1-dump-lsassexe-memory-using-comsvcsdll)
-- [2. PowerShell Encoded Command](#2-powershell-encoded-command)
-- [3. FortiGate Malware Activity Detected](#3-FortiGate-malware-activity-detected)
+1. [Dump LSASS.exe Memory using comsvcs.dll](#1-dump-lsassexe-memory-using-comsvcsdll)
+2. [PowerShell Encoded Command](#2-powershell-encoded-command)
+3. [FortiGate Malware Activity Detected](#3-FortiGate-malware-activity-detected)
 ---
 
 ### 1. Dump LSASS.exe Memory using comsvcs.dll
