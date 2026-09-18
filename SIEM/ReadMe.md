@@ -6,10 +6,11 @@ Brief reference for detection rules maintained in this repo/index.
 
 ## Rules Table:
 
-[PowerShell Encoded Command](#1. powershell-encoded-command)
+[PowerShell Encoded Command](#1-powershell-encoded-command)
 
 ### 1. PowerShell Encoded Command
 
+- **Rule Query:** [PowerShell Encoded Command](Elasticsearch/Execute_base64-encoded_PowerShell.ndjson)
 - **Type:** `ES|QL` 
 - **Severity:** `High` 
 - **Risk Score:** `73` 
