@@ -6,6 +6,7 @@ Brief reference for detection rules maintained in this repo/index.
 
 1. [PowerShell Encoded Command](#1-powershell-encoded-command)
 2. [LSASS Memory Dump Using comsvcs.dll](#2-lsass-memory-dump-using-comsvcsdll)
+3. [Windows Defender Exclusion Modification Detection](#3-windows-defender-exclusion-modification-detection)
 ---
 
 ### 1. PowerShell Encoded Command
@@ -65,7 +66,7 @@ CommandLine="*MiniDump*"
 
 ### 3. Windows Defender Exclusion Modification Detection
 
-* ***Type:** `SPL`
+* **Type:** `SPL`
 
 * **Severity:** `High`
 
