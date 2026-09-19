@@ -30,6 +30,8 @@ index=main sourcetype="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCo
 | sort - _time
 ```
 
+---
+
 ### 2. LSASS Memory Dump Using `comsvcs.dll`
 
 * **Type:** `SPL`
@@ -44,6 +46,7 @@ index=main sourcetype="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCo
 
 * **What it does:** Detects `rundll32.exe` executions that invoke `comsvcs.dll` with the `MiniDump` export function, a known technique for dumping LSASS process memory. The detection focuses on the process command line and can identify the behavior even when the resulting dump file uses a non-standard filename.
 
+---
 
 ```Spl
 index=*
@@ -59,3 +62,32 @@ CommandLine="*MiniDump*"
 ```
 
 ----
+
+### 3. Windows Defender Exclusion Modification Detection
+
+* ***Type:** `SPL`
+
+* **Severity:** `High`
+
+* **Interval:** `Every 5m`
+
+* **MITRE ATT&CK:** `T1562.001 – Impair Defenses: Disable or Modify Tools`
+
+* **Author:** `Saeed Elfiky`
+
+* **What it does:** Detects Windows Defender exclusion modifications by searching for `Windows Defender\Exclusions` in the `New_Value` or `Message` fields of Windows event logs. This can identify attempts to add or modify Defender exclusions, which may allow malicious files or processes to bypass Microsoft Defender protection.
+
+```spl
+index=dcserver
+sourcetype="XmlWinEventLog"
+
+(
+    New_Value="*\\Windows Defender\\Exclusions\\*"
+    OR
+    Message="*\\Windows Defender\\Exclusions\\*"
+)
+| eval severity="High"
+| eval detection_name="Windows Defender Exclusion Modification"
+| eval mitre_technique="T1562.001 - Impair Defenses: Disable or Modify Tools"
+| table _time host Computer EventCode Product_Name Old_Value New_Value severity detection_name mitre_technique
+```
